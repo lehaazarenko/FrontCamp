@@ -11,15 +11,15 @@ header {
         margin-bottom: 20px;
     }
 
-    button#load-news-button {
+    button {
         height: 40px;
-        width: 120px;
+        padding: 5px 15px;
         font-size: 18px;
         border: none;
         background-color: gainsboro;
     }
 
-    button#load-news-button:hover {
+    button:hover {
         background-color: darkgray;
         cursor: pointer;
     }

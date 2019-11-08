@@ -1,0 +1,19 @@
+.error-message-container {
+    max-height: 140px;
+    min-width: 240px;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    border: 1px solid black;
+    margin-top: 30px;
+    font-size: 1.2rem;
+    background-color: antiquewhite;
+
+    .error-message-header {
+        color: red;
+    }
+
+    .error-message-text {
+        font-style: italic;
+    }
+}
