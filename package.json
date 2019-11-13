@@ -1,0 +1,46 @@
+{
+  "name": "front-camp-task",
+  "version": "1.0.0",
+  "description": "task for Front Camp Q4 2019",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config ./webpack.config.js --mode production",
+    "lint": "eslint ./ --cache --ignore-pattern .gitignore"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lehaazarenko/FrontCamp.git"
+  },
+  "author": "Aliaksei Azaranka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lehaazarenko/FrontCamp/issues"
+  },
+  "homepage": "https://github.com/lehaazarenko/FrontCamp#readme",
+  "devDependencies": {
+    "@babel/core": "^7.7.2",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/polyfill": "^7.7.0",
+    "@babel/preset-env": "^7.7.1",
+    "babel-eslint": "^10.0.3",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.2.0",
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-loader": "^3.0.2",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.16.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "node-sass": "^4.13.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.7.2"
+  }
+}

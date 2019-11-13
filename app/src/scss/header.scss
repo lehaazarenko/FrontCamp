@@ -1,0 +1,26 @@
+header {
+    padding: 20px;
+    box-shadow: 0px 0px 15px 1px #ddd;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    #news-source-select {
+        height: 40px;
+        width: 220px;
+        margin-bottom: 20px;
+    }
+
+    button#load-news-button {
+        height: 40px;
+        width: 120px;
+        font-size: 18px;
+        border: none;
+        background-color: gainsboro;
+    }
+
+    button#load-news-button:hover {
+        background-color: darkgray;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,22 @@
+{
+  "parser": "babel-eslint",
+  "extends": "airbnb",
+  "rules": {
+  	"linebreak-style": [
+	  "error",
+	  "windows"
+	],
+  	"indent": [2, 4, {"SwitchCase": 1}],
+  	"consistent-return": [
+  	  "error",
+  	  {
+  	    "treatUndefinedAsUnspecified": true
+  	  }
+  	],
+    "max-len": [1, 140, 4]
+  },
+  "globals": {
+  	"fetch": false,
+  	"document": false
+  }
+}
