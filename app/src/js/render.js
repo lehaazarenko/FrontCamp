@@ -7,9 +7,15 @@ const addSourceSelectOption = (source, selectElement) => {
     selectElement.append(option);
 };
 
-const renderErrorMessage = (type, element) => {
+const renderErrorMessage = (message = '', type = 'default', element = document.getElementById('articles-container')) => {
     /* eslint no-param-reassign: ["error", { "props": false }] */
-    element.innerHTML = `<p>${vars.errorMessages[type]}</p>`;
+    element.innerHTML = `
+      <div class="error-message-container">
+        <div class="error-message-header">Error occured...</div>
+        <p class="error-message-text">
+          ${message || vars.errorMessages[type]}
+        </p>
+      <div>`;
 };
 
 const addNewsArticle = (newsArticle, element) => {
@@ -31,8 +37,16 @@ const addNewsArticle = (newsArticle, element) => {
     element.append(article);
 };
 
+const renderNewsArticles = (newsArticles, element) => {
+    if (newsArticles && newsArticles.length) {
+        newsArticles.forEach((article) => addNewsArticle(article, element));
+    } else {
+        renderErrorMessage('', 'no-articles-found', element);
+    }
+};
+
 export default {
     addSourceSelectOption,
     renderErrorMessage,
-    addNewsArticle,
+    renderNewsArticles,
 };
